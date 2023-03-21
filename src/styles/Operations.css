@@ -1,0 +1,15 @@
+.operation-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+  order: 3;
+}
+
+@media screen and (min-width: 626px) {
+  .operation-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,26 @@
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+
+  transition: opacity 1.5s;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media screen and (min-width: 632px) {
+  .app {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto repeat(3, 15rem) auto;
+    gap: 2rem;
+  }
+}
